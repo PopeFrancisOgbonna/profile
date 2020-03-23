@@ -249,7 +249,7 @@ footer{
     transition: 1s;
 }
 /*-----------------Modal section--------------*/
-#name{
+#name,#email{
     margin-bottom: 10px;
 }
 #message{
