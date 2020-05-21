@@ -73,9 +73,17 @@ body{
     color:#fff !important;
     text-transform: uppercase;
 }
+.nav-link:hover{
+    /*background: #b2ddf1;*/
+    border-radius: 20px;
+    color: red ! important;
+}
 .navbar-toggler{
     outline: none !important;
     color:#fff;
+}
+.navbar-brand img{
+    height: 45px;
 }
 .about{
     padding-top: 100px;
