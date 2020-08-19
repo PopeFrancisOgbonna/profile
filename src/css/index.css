@@ -5,8 +5,8 @@ body{
 }
 /*-----Header CSS------*/
 #header{
-    height: 100vh;
-    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("src/img/wall.jpg");
+    height: 100vh; 
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/src/img/wall.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -37,6 +37,9 @@ body{
     padding: 10px 10px 20px;
     border-radius: 30px;
 }
+.scroll-btn:hover{
+    cursor: pointer;
+}
 .scroll-bar span{
     border: 2px solid #fff;
     font-size: 10px;
@@ -62,19 +65,28 @@ body{
 .navbar{
     background-color: rgba(0,0,0,1);
     width: 100%;
-    
+    max-height: 40px;
 }
 .navbar-nav{
+    padding: 25px;
     float: right;
     text-align: right;
    
+}
+#nickName{
+    max-height: 25px;
+    width: auto;
+}
+#profile-img img{
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
 }
 .nav-link{
     color:#fff !important;
     text-transform: uppercase;
 }
 .nav-link:hover{
-    /*background: #b2ddf1;*/
+    /* background: #b2ddf1; */
     border-radius: 20px;
     color: red ! important;
 }
@@ -82,12 +94,9 @@ body{
     outline: none !important;
     color:#fff;
 }
-.navbar-brand img{
-    height: 45px;
-}
 .about{
-    padding-top: 100px;
-    margin-bottom: -130px;
+    padding-top: 50px;
+    margin-bottom: -300px;
 }
 
 .skills-bar p{
@@ -104,7 +113,7 @@ body{
 }
 /*--------------Resume Section-----------*/
 .resume{
-    margin-top:-100px;
+    margin-top:20px;
     padding-top: 50px;
     padding-bottom: 80px;
     background: #f9f9f9;
@@ -153,6 +162,9 @@ body{
     z-index: 1;
 }
 /*-------Services section------*/
+.services{
+    padding-top:45px;
+}
 .services h1{
     margin-bottom: 15px;
 }
@@ -188,6 +200,21 @@ body{
 }
 .service-box:hover p{
     color:#fff;
+}
+/* -----------------------------Projects-------------------------- */
+#project{
+    background-color: #fcf7f7;
+    padding:15px;
+    margin: 20px 0;
+}
+.clientpro{
+    padding-top: 30px;
+    max-width: 900px;
+    margin: 5 auto;
+}
+.project-img{
+    max-height: 200px;
+    width: auto;
 }
 /*-------------------------Contact Section--------------------------*/
 .contact{
@@ -265,4 +292,57 @@ footer{
 }
 .modal-title{
     font-weight: bold;
+}
+/* Media Query */
+@media screen and (max-width:414px){
+    .user-box h1{
+        font-size: 24px;
+    }
+    .user-box p{
+        padding-bottom: 5px;
+    }
+    .social-icon ul li{
+        height: 30px;
+        width: 30px;
+        padding-left: 6px;
+        padding-top: 6px;
+        margin-top:5px;
+        color:#fff;
+        background:#000;
+    }
+    .social-icon ul li:hover{
+        padding-left: 10px;
+        width: 60px;
+        transition: 1s;
+    }
+    .skills-bar{
+        margin-left: 20px;
+    }
+    .services{
+        margin-left: 24px;
+    }
+    #project{
+        margin-left: 5px;
+    }
+    .project-img{
+        width: 250px;
+        height: auto;
+    }
+    .modal{
+        width:350px;
+    }
+}
+@media screen and (width:768px){
+    .project-img{
+        width: 230px;
+        height: auto;
+    }
+}
+@media screen and (width:834px){
+    .project-img{
+        width: 240px;
+        height: auto;
+    }#project{
+        margin-left: 1px;
+    }
 }

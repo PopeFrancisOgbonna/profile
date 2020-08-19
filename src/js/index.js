@@ -1,3 +1,15 @@
+//scroll Effect
+const scroll = document.querySelector('.scroll-btn');
+scroll.addEventListener('click', (e) =>{
+    let option = {
+        top:650,
+        lef:0,
+        behavior:'smooth'
+    }
+    e.preventDefault();
+    scrollTo(option)
+})
+
 const email=document.querySelector('#email');
 const name = document.querySelector('#name');
 const message =document.querySelector('#message');
@@ -25,6 +37,7 @@ send.addEventListener('click',(e)=>{
         
     }
     else{
-        alert('Incorrect!');
+        alert('Incorrect input!');
     }
-})
+});
+//
