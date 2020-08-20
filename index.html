@@ -2,10 +2,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="portfolio, Resume, profile">
+    <meta name="description" content="personal profile">
+    <meta name="author" content="">
     <title>Resume</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawsome/css/all.css">
     <link rel="stylesheet" href="src/css/index.css">
+    <link rel="icon" href="src/img/Capture.PNG">
 </head>
 <body>
     <section id="header">
@@ -60,7 +64,7 @@
                 </div>
                 <div class="col-md-6">
                     <h3>Who Am I?</h3>
-                    <P >I'm a software engineer with over 3 years experience and have worked for small startups and large organisations.
+                    <P >I'm a software engineer with 1+ years experience and have worked for small startups and large organisations.
                         I love building things, am most attracted to solving real customer problems
                         with a business justification. Am looking for a senior individual contributor role where I can take on a collaborative leadership 
                         responsibility, and gain experience with architecture and project management.
@@ -103,7 +107,7 @@
                         <div class="progress">
                             <div class="progress-bar" style="width: 85%;">85%</div>
                         </div>
-                        <p>Word Press</p>
+                        <p>Vue.js</p>
                         <div class="progress">
                             <div class="progress-bar" style="width: 58%;">58%</div>
                         </div>
@@ -128,7 +132,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <h3 class="text-center">My Experiences</h3>
-                        <ul class="timeline">
+                        <ul class="time timeline">
                             <li>
                                 <h4> <span>2020 -</span> Software Developer</h4>
                                 <p>
@@ -165,7 +169,7 @@
                     </div>
                     <div class="col-md-6">
                         <h3 class="text-center">Educational Qualification</h3>
-                        <ul class="timeline">
+                        <ul  class="time timeline">
                             <li>
                                 <h4> <span>2018 -</span> B.Sc Computer Science</h4>
                                 <p>
@@ -259,6 +263,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="contact" id="contact">
             <div class="container text-center">
                 <h1>Contact Me</h1>
@@ -279,39 +284,19 @@
                 </div>
                
                 <button id="download" class="btn btn-primary  btn-sm"><i class="fa fa-download mr-2"></i>Resume</button>
-                <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#hire-modal"><i class="fa fa-rocket mr-2"></i>Hire Me</button>
+                <button class="btn btn-primary btn-sm" id="hireMeBtn"><i class="fa fa-rocket mr-2"></i>Hire Me</button>
             </div>
             
             <footer class="text-center">
                 <p>copyright &copy; 2020  Allrights Reserved.</p>
             </footer>
         </div>
-         <!--------------Modal for Hire Me------------>
-         <div class="modal fade " data-backdrop="static" id="hire-modal" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Hire Me</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="">
-                            <div class="form-group">
-                               <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
-                               <input type="text" class="form-control" placeholder="Enter your Email Address" id="email"required
-                            </div>
-                            <div class="form-group">
-                                <textarea name=""  id="message" cols="10" rows="6"></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-primary send"><i class="far fa-paper-plane"></i> Send</button>
-                        <button class="btn btn-secondary" data-dismiss="modal"> <i class="fas fa-times-circle"></i> Close</button>
-                    </div>
-                </div>
+         <!--Embedded google Form -->
+        <div class="iframeDiv text-center hide">
+            <div class="wrapper">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfD2yfZW70LFfohnxtB2sCmmt2pA-piJxiYa4wOfk37o5xTVg/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <button id="hireClose" class="btn btn-secondary"> <i class="fas fa-times-circle"></i> Close</button>
             </div>
-
         </div>
     </section>
     <script src="bootstrap/js/jquery-3.4.1.min.js"></script>

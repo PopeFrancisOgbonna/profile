@@ -10,13 +10,24 @@ scroll.addEventListener('click', (e) =>{
     scrollTo(option)
 })
 
+//Google form handler
+const hireMe = document.querySelector('#hireMeBtn');
+const frame = document.querySelector('.iframeDiv');
+const closeHire = document.querySelector('#hireClose');
+hireMe.addEventListener('click', (e) =>{
+    e.preventDefault();
+    frame.classList.remove('hide');
+});
+closeHire.addEventListener('click', (e) =>{
+    e.preventDefault();
+    frame.classList.add('hide');
+})
+//Modal section but was Removed in favor of google form
 const email=document.querySelector('#email');
 const name = document.querySelector('#name');
 const message =document.querySelector('#message');
 const send=document.querySelector('.send');
 //const modal=document.querySelector('#hire-modal');
-
-
 const parttern=/^[a-zA-Z]+$/;
 const mail=/\S+\@\S+\.\S+/;
 

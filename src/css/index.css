@@ -125,7 +125,7 @@ body{
     list-style-type: none;
     position: relative;
 }
-.timeline::before{
+.time::before{
     content: '';
     background:#555;
     display: inline-block;
@@ -149,7 +149,7 @@ body{
     font-weight: bold;
     color: #ccc;
 }
-.timeline li:before{
+.time li:before{
     content:'';
     background: #fff;
     display: inline-block;
@@ -190,12 +190,12 @@ body{
     columns: #777;
 }
 .service-box:hover{
-    background:#000;
+    background:rgba(0, 0, 0, 0.692);
     color:#fff;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     transition: 2s;
 }
 .service-box:hover p{
@@ -203,7 +203,7 @@ body{
 }
 /* -----------------------------Projects-------------------------- */
 #project{
-    background-color: #fcf7f7;
+    background-color: #fad0d09f;
     padding:15px;
     margin: 20px 0;
 }
@@ -289,6 +289,38 @@ footer{
 }
 #message{
     width: 100%;
+}
+.iframeDiv{
+    width: 100%;
+    height: 100%;
+    background-color: #ff0404ca;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+iframe{
+    width: 700px;
+    height: 450px;
+    margin: 0;
+}
+.wrapper{
+width: 705px;
+padding: 0px;
+border: 3px solid #777;
+border-radius: 10px;
+margin: 35px auto;
+background-color: #fff;
+overflow: hidden;
+padding-bottom: 8px;
+}
+#hireClose{
+    float: right;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.hide{
+    display: none;
 }
 .modal-title{
     font-weight: bold;
