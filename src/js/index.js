@@ -9,7 +9,19 @@ scroll.addEventListener('click', (e) =>{
     e.preventDefault();
     scrollTo(option)
 })
-
+const toggle = document.querySelector('#toggleBtn');
+let check = 0;
+toggle.addEventListener('click', (e) =>{
+    e.preventDefault();
+    const nav = document.querySelector('.navbar-nav');
+    if(check === 0){
+        nav.style.background = 'rgba(0, 0, 0, 0.2)';
+        check =+ 1;
+    }else{
+        nav.style.background = '';
+        check = 0;
+    }
+})
 //Google form handler
 const hireMe = document.querySelector('#hireMeBtn');
 const frame = document.querySelector('.iframeDiv');

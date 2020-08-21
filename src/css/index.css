@@ -71,7 +71,6 @@ body{
     padding: 25px;
     float: right;
     text-align: right;
-   
 }
 #nickName{
     max-height: 25px;
@@ -212,6 +211,7 @@ body{
     max-width: 900px;
     margin: 5 auto;
 }
+
 .project-img{
     max-height: 200px;
     width: auto;
