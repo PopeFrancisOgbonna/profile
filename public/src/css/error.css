@@ -1,0 +1,12 @@
+#error{
+    max-height: 250px;
+    width: auto;
+    margin-top: 100px;
+}
+p{
+    font-size: 1.6em;
+    color: red;
+}
+body{
+    background:#F2EFEE;
+}
