@@ -356,25 +356,26 @@ padding-bottom: 8px;
     #project{
         margin-left: 5px;
     }
-    .project-img{
-        width: 250px;
-        height: auto;
-    }
+   
     .modal{
         width:350px;
     }
-}
-@media screen and (width:768px){
-    .project-img{
-        width: 230px;
-        height: auto;
+    iframe{
+        max-width: 280px;
+        height: 500px;
+        margin: 0 auto;
+        font-size: 12px;
+        font-weight: 200;
     }
-}
-@media screen and (width:834px){
-    .project-img{
-        width: 240px;
-        height: auto;
-    }#project{
-        margin-left: 1px;
+    .wrapper{
+    min-width: 320px;
+    height: auto;
+    padding: 0px;
+    border: 3px solid #777;
+    border-radius: 10px;
+    margin: 35px auto;
+    background-color: #fff;
+    overflow-y:auto; 
+    padding-bottom: 8px;
     }
 }
