@@ -202,9 +202,9 @@ body{
 }
 /* -----------------------------Projects-------------------------- */
 #project{
-    background-color: #fad0d09f;
-    padding:15px;
-    margin: 20px 0;
+    background-color: #ffdcdc9f;
+    padding:15px 15px 45px 15px;
+    margin-top: 10px;
 }
 .clientpro{
     padding-top: 30px;
@@ -218,7 +218,6 @@ body{
 }
 /*-------------------------Contact Section--------------------------*/
 .contact{
-    margin-top: 10px;
     padding-top: 10px;
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/src/img/contact.jpg);
     background-position: center;
@@ -253,7 +252,6 @@ body{
 footer{
     background:#000;
     height: 50px;
-    margin-top: 50px;
     color: #fff;
     padding-top: 10px;
 }
@@ -295,29 +293,29 @@ footer{
     height: 100%;
     background-color: #ff0404ca;
     position: fixed;
+    overflow: auto;
     top: 0;
     left: 0;
     padding-top: 20px;
 }
 iframe{
-    width: 700px;
-    height: 450px;
-    margin: 0;
+    min-width: 350px;
 }
 .wrapper{
-width: 705px;
-padding: 0px;
+width: fit-content;
+padding: 5px;
 border: 3px solid #777;
 border-radius: 10px;
-margin: 35px auto;
+margin: 35px auto 5 auto;
 background-color: #fff;
-overflow: hidden;
-padding-bottom: 8px;
+padding-bottom: 2px;
+
+
 }
 #hireClose{
-    float: right;
-    margin-right: 10px;
-    margin-top: 15px;
+    /* float: right; */
+    margin-left: 260px;
+    margin-bottom: 5px;
 }
 .hide{
     display: none;
@@ -361,21 +359,10 @@ padding-bottom: 8px;
         width:350px;
     }
     iframe{
-        max-width: 280px;
-        height: 500px;
-        margin: 0 auto;
-        font-size: 12px;
-        font-weight: 200;
+        min-width: 300px;
     }
-    .wrapper{
-    min-width: 320px;
-    height: auto;
-    padding: 0px;
-    border: 3px solid #777;
-    border-radius: 10px;
-    margin: 35px auto;
-    background-color: #fff;
-    overflow-y:auto; 
-    padding-bottom: 8px;
+    #hireClose{
+        margin-bottom: 15px;
+        margin-left: 0;
     }
 }

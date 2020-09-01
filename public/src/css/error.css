@@ -1,3 +1,16 @@
+.navbar{
+    background-color: rgba(0,0,0,1);
+    width: 100%;
+    max-height: 60px;
+}
+#nickName{
+    max-height: 40px;
+    width: auto;
+}
+.navbar-toggler{
+    outline: none !important;
+    color:#fff;
+}
 #error{
     max-height: 250px;
     width: auto;
