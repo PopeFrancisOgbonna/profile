@@ -26,12 +26,17 @@ toggle.addEventListener('click', (e) =>{
 const social = document.querySelector('.social-icon');
 const hireMe = document.querySelector('#hireMeBtn');
 const frame = document.querySelector('.iframeDiv');
+const form = document.querySelector('iframe');
 const closeHire = document.querySelector('#hireClose');
 hireMe.addEventListener('click', (e) =>{
     e.preventDefault();
     frame.classList.remove('hide');
     if(screen.width < 450){
         social.classList.add('hide');
+    }
+    if(screen.width > 580){
+        form.style.minWidth ='600px';
+        form.style.height='800px';
     }
 });
 closeHire.addEventListener('click', (e) =>{

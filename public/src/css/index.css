@@ -314,7 +314,7 @@ padding-bottom: 2px;
 }
 #hireClose{
     /* float: right; */
-    margin-left: 260px;
+    /* margin-left: 260px; */
     margin-bottom: 5px;
 }
 .hide{
@@ -358,6 +358,15 @@ padding-bottom: 2px;
     .modal{
         width:350px;
     }
+    iframe{
+        min-width: 360px;
+    }
+    #hireClose{
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+}
+@media screen and (width:320px){
     iframe{
         min-width: 300px;
     }
