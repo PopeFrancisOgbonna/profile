@@ -9,6 +9,7 @@ scroll.addEventListener('click', (e) =>{
     e.preventDefault();
     scrollTo(option)
 })
+//Menu toggler for small devices 
 const toggle = document.querySelector('#toggleBtn');
 let check = 0;
 toggle.addEventListener('click', (e) =>{
@@ -21,7 +22,23 @@ toggle.addEventListener('click', (e) =>{
         nav.style.background = '';
         check = 0;
     }
-})
+});
+//handle preview 
+const preview = document.querySelectorAll('.preview-btn');
+
+    for (let index = 0; index < preview.length; index++) {
+        preview[index].addEventListener('click', (e) =>{
+            e.preventDefault();
+            var link = preview[index].getAttribute('href');
+            console.log(link)
+            if(link ==='#'){
+                alert('Sorry Preview unavailable at the moment!');
+                return;
+        }
+        })
+        
+        
+    }
 //Google form handler
 const social = document.querySelector('.social-icon');
 const hireMe = document.querySelector('#hireMeBtn');
