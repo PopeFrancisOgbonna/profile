@@ -264,7 +264,14 @@ a.preview-btn:hover{
   background:#000 !important;
   transition: 0.6s;
 }
-
+.c_link{
+  color: #fff;
+  text-decoration: none;
+}
+.c_link:hover{
+  text-decoration: none;
+  color: #05acfa;
+}
 footer{
   background:#000;
   height: 50px;
